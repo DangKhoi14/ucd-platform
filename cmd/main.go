@@ -17,5 +17,7 @@ func main() {
 	app.Post("/upload", handler.UploadHandler)
 	app.Get("/docs/:filename", handler.GetDocumentation)
 
-	log.Fatal(app.Listen(":3000"))
+	
+	// log.Fatal(app.ListenTLS(":3000", "cert.pem", "key.pem")) // For HTTPS
+	log.Fatal(app.Listen(":3000")) // For HTTP
 }
