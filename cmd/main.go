@@ -14,7 +14,7 @@ func main() {
 		return c.SendString("Welcome to UCD Platform - COBOL Analyzer")
 	})
 
-	app.Post("/upload", handler.UploadCOBOLFile)
+	app.Post("/upload", handler.UploadHandler)
 	app.Get("/docs/:filename", handler.GetDocumentation)
 
 	log.Fatal(app.Listen(":3000"))
