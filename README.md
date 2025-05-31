@@ -38,9 +38,9 @@ ucd-platform/
 ---
 
 ## 🛠️ Tech Stack
-Golang with Fiber for backend
+**Golang** with [Fiber](https://gofiber.io/) for backend
 
-COBOL code parsing and documentation tools
+**COBOL** code parsing and documentation tools
 
 HTTPS (self-signed for local, production-ready with real certificates)
 
